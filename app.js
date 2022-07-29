@@ -9,6 +9,10 @@ app.get('/', (req, res) => {
     res.sendFile(`${__dirname}/public/index.html`);
 });
 
+app.get('/news', (req, res) => {
+    res.sendFile(`${__dirname}/public/news.html`);
+});
+
 app.listen(3001, () => {
     console.log('server has been started on port 3001');
 });
